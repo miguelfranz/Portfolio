@@ -59,23 +59,24 @@ const HeroSection = () => {
             </div>
           </div>
 
+
           {/* Right Side */}
-          <div className="hidden lg:flex justify-center">
+          <div className="flex justify-center order-first lg:order-last mb-10 lg:mb-0">
             <TiltedCard
               imageSrc={miguel}
               altText="Miggy"
               captionText="Frontend Developer, UI/UX Designer"
-              containerHeight="420px"
-              containerWidth="350px"
-              imageHeight="420px"
-              imageWidth="350px"
-              rotateAmplitude={12}
-              scaleOnHover={1.25}
+              containerHeight="320px"
+              containerWidth="260px"
+              imageHeight="400px"
+              imageWidth="300px"
+              rotateAmplitude={10}
+              scaleOnHover={1.12}
               showMobileWarning={false}
               showTooltip
               displayOverlayContent
               overlayContent={
-                <p className="rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 shadow-xl text-white">
+                <p className="rounded-full bg-white/10 backdrop-blur-md border border-white/20 px-5 py-2 shadow-xl text-white text-sm">
                   Hire Me!
                 </p>
               }
@@ -86,7 +87,7 @@ const HeroSection = () => {
 
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
