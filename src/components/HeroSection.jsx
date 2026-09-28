@@ -37,11 +37,8 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-gray-300 mt-8 max-w-xl leading-8">
-              I'm a Front-End Developer and UI/UX Designer with a passion for
-              creating modern, responsive, and user-friendly digital
-              experiences. I enjoy transforming ideas into clean, functional
-              interfaces that not only look great but also provide an intuitive
-              user experience.
+              I'm a Front-End Developer, UI/UX Designer, and Graphic Artist with a passion for creating modern, responsive, and user-friendly digital experiences. I enjoy transforming ideas into clean, functional interfaces that not only look great but also provide an intuitive user experience. As a graphic artist, I also create visually engaging designs, combining creativity and technical skills to bring ideas to life across both digital and visual platforms.
+
             </p>
 
             <div className="mt-10">
@@ -65,7 +62,7 @@ const HeroSection = () => {
             <TiltedCard
               imageSrc={miguel}
               altText="Miggy"
-              captionText="Frontend Developer, UI/UX Designer"
+              captionText="Frontend Developer, UI/UX Designer, Graphic Artist"
               containerHeight="320px"
               containerWidth="260px"
               imageHeight="400px"

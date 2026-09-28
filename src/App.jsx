@@ -12,6 +12,7 @@ import AboutSection from './components/AboutSection'
 import Experiences from './components/Experiences'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import Projects from './components/Projects'
 
 const App = () => {
   useEffect(() => {
@@ -68,6 +69,9 @@ const App = () => {
         <AboutSection />
         </div>
         <Experiences />
+        <div className='mb-30'>
+        <Projects />
+        </div>
         <div className='mb-30'>
         <Contacts />
         </div>

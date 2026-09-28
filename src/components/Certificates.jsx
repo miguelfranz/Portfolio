@@ -4,6 +4,7 @@ import CardSwap, { Card } from './CardSwap'
 import cert1 from '../assets/cert1.png'
 import cert2 from '../assets/cert2.png'
 import cert3 from '../assets/cert3.jpg'
+import cert4 from '../assets/cert4.png'
 
 const Certificates = () => {
   return (
@@ -70,6 +71,13 @@ const Certificates = () => {
                   className="w-full h-full object-cover"
                 />
               </Card>
+              <Card customClass="overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src={cert4}
+                  alt="Certificate 4"
+                  className="w-full h-full object-cover"
+                />
+              </Card>
             </CardSwap>
           </div>
         </div>
@@ -117,6 +125,13 @@ const Certificates = () => {
                 <img
                   src={cert3}
                   alt="Certificate 3"
+                  className="w-full h-full object-cover"
+                />
+              </Card>
+              <Card customClass="overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src={cert4}
+                  alt="Certificate 4"
                   className="w-full h-full object-cover"
                 />
               </Card>

@@ -98,7 +98,7 @@ const Experiences = () => {
     return (
         <section
             id="skills"
-            className="relative overflow-hidden py-20 text-white"
+            className="relative overflow-hidden py-1 text-white"
         >
             <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-16">
                 <div className="grid items-start gap-16 md:grid-cols-2">
