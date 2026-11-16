@@ -1,0 +1,205 @@
+.about-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: border-color .2s;
+}
+
+.about-card:hover {
+    border-color: var(--accent);
+}
+
+.about-glyph {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font: 700 1.05rem var(--font);
+}
+
+.about-card h3 {
+    font: 700 1.25rem var(--font);
+    margin-bottom: .6rem;
+}
+
+.about-card p {
+    color: var(--muted);
+    font-size: .98rem;
+}
+
+.about-card ul {
+    list-style: none;
+    padding: 1.25rem 0 0;
+    margin-top: auto;
+    display: grid;
+    gap: .5rem;
+    font-size: .95rem;
+}
+
+.about-card li {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.about-card li::before {
+    content: "";
+    width: .35rem;
+    height: .35rem;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+}
+
+.about-card p+ul {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+}
+
+/* Technologies: three discipline panels */
+.tech {
+    margin-top: 5.5rem;
+}
+
+.tech-head {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.tech-head h3 {
+    font: 700 clamp(1.6rem, 3vw, 2.1rem)/1.2 var(--font);
+    letter-spacing: -0.02em;
+}
+
+.tech-head p {
+    margin-top: .6rem;
+    color: var(--muted);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.tech-panel {
+    position: relative;
+    padding: 1.75rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.tech-panel::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 1.75rem;
+    width: 3rem;
+    height: 3px;
+    border-radius: 0 0 4px 4px;
+    background: var(--c);
+}
+
+.tech-panel header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tech-glyph {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex: none;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--c) 16%, transparent);
+    color: var(--c);
+    font: 700 1rem var(--font);
+}
+
+.tech-panel h4 {
+    font: 700 1.2rem/1.2 var(--font);
+}
+
+.tech-panel header small {
+    color: var(--muted);
+    font-size: .88rem;
+}
+
+.tech-count {
+    margin-left: auto;
+    align-self: start;
+    color: var(--muted);
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.tech-panel section {
+    display: grid;
+    gap: .65rem;
+}
+
+.tech-panel h5 {
+    color: var(--muted);
+    font: 500 .85rem var(--font);
+    letter-spacing: .04em;
+}
+
+.tech-panel ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.tool {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    padding: .45rem .85rem;
+    border-radius: 10px;
+    font-size: .95rem;
+    background: color-mix(in srgb, var(--c) 9%, transparent);
+    border: 1px solid color-mix(in srgb, var(--c) 22%, transparent);
+    transition: border-color .2s, background .2s;
+}
+
+.tool svg {
+    width: 1.05rem;
+    height: 1.05rem;
+    color: var(--c);
+    flex: none;
+}
+
+.tool:hover {
+    background: color-mix(in srgb, var(--c) 16%, transparent);
+    border-color: var(--c);
+}
+
+@media (max-width: 900px) {
+    .about-services {
+        grid-template-columns: 1fr;
+    }
+
+    .tech {
+        margin-top: 3.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
