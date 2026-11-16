@@ -1,8 +1,14 @@
 .contact-card {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 3.5rem;
+    justify-items: center;
     padding: 3rem;
+    text-align: center;
+}
+
+.contact-info {
+    display: grid;
+    justify-items: center;
+    max-width: 36rem;
 }
 
 .contact-info h2 {
@@ -16,15 +22,24 @@
     font-size: 1.125rem;
 }
 
-.contact-email {
+.contact-email,
+.contact-phone {
+    display: block;
+    width: fit-content;
     color: var(--accent);
     font-weight: 600;
     text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-phone {
+    margin-top: .4rem;
 }
 
 .contact-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.75rem;
     margin-top: 1.75rem;
 }
@@ -40,68 +55,8 @@
     color: var(--ink);
 }
 
-.contact form {
-    display: grid;
-    gap: 1.1rem;
-}
-
-.contact label {
-    display: grid;
-    gap: .4rem;
-    font-weight: 500;
-    font-size: .9375rem;
-}
-
-.contact input,
-.contact textarea,
-.contact select {
-    padding: .8rem 1rem;
-    font: inherit;
-    color: var(--ink);
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-}
-
-.contact textarea {
-    resize: vertical;
-}
-
-.contact input:focus,
-.contact textarea:focus,
-.contact select:focus {
-    border-color: var(--accent);
-    outline: none;
-    box-shadow: 0 0 0 3px var(--accent-soft);
-}
-
-.contact [aria-invalid="true"] {
-    border-color: #e5484d;
-}
-
-.contact-error {
-    color: #e5484d;
-    font-weight: 400;
-}
-
-.contact-send {
-    justify-self: start;
-}
-
-.contact-send:disabled {
-    opacity: .6;
-    cursor: default;
-}
-
-.contact-status {
-    min-height: 1.5rem;
-    color: var(--muted);
-}
-
 @media (max-width: 900px) {
     .contact-card {
-        grid-template-columns: 1fr;
-        gap: 2rem;
         padding: 1.75rem;
     }
 }
