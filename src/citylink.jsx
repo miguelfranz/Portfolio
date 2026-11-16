@@ -1,4 +1,4 @@
-import "./CityLink.css";
+import "./citylink.css";
 
 // Put citylink-cdo-showcase.png and citylink-cdo.png in public/projects/
 const STEPS = [
