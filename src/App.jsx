@@ -4,6 +4,7 @@ import About from "./About";
 import Works from "./Works";
 import Certificates from "./Certificates";
 import Contact from "./Contact";
+import miguel from "./assets/miguel.jpg";
 
 const PROFILE = {
   name: "Carlos Miguel",
@@ -11,7 +12,7 @@ const PROFILE = {
     "I'm a full stack developer, UI/UX designer, and AI automation specialist, passionate about intuitive interfaces, thoughtful user experiences, and automations that remove repetitive work.",
   email: "carlosmiguelfrancisco1@gmail.com",
   resume: "src/assets/FRANCISCO_RESUME.pdf.pdf",
-  photo: "/src/assets/miguel.jpg",
+  photo: miguel,
   links: [
     ["GitHub", "https://github.com/miguelfranz"],
     ["LinkedIn", "https://www.linkedin.com/in/carlos-miguel-francisco-01a36a324/"],
